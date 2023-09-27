@@ -1,0 +1,21 @@
+##se instala node en la maquina virtual
+FROM node:16
+
+##se crea la carpeta app
+WORKDIR /app
+
+##copia el package.json
+COPY  package*.json ./
+
+##se instalan las dependencias
+RUN npm install
+
+##se copia el codigo de la carpeta de origen a la carpeta destino
+COPY . .
+
+##le indicamos que puerto exponer
+
+EXPOSE 8000
+
+##comando para haerle npm start
+CMD [ "npm","start" ]
