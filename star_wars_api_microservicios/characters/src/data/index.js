@@ -14,10 +14,31 @@ module.exports = {
         console.log(character)
         return character.data
     },
+    
+    getById: async (id) => {
+        const results = await axios.get(`http://database:8004/Character/${id}`);
+        return results.data;
+      },
 
-    create: async (object) => {
-        return await axios.post("http://database:8004/", object);
-    },
+
+      create: async (character) => {
+        const results = await axios.post("http://database:8004/Character",character);
+        return results.data;
+     },
+
+     update: async (id, character) => {
+        return await axios.update(`http://database:8004/Character/${id}`, character)
+          .then((res) => res.data);
+      },
+      delete: async (id) => {
+        return await axios.delete(`http://database:8004/Character/${id}`)
+          .then((res) => res.data);
+      },
+
+
+   // create: async (object) => {
+     //   return await axios.post("http://database:8004/", object);
+   // },
 };
 
 
