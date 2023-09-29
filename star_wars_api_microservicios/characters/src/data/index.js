@@ -15,8 +15,8 @@ module.exports = {
         return character.data
     },
 
-    create: async () => {
-        throw Error("Hay un error en la BDD al momento de crear el personaje")
+    create: async (object) => {
+        return await axios.post("http://database:8004/", object);
     },
 };
 

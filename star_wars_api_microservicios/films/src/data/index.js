@@ -10,7 +10,7 @@ module.exports = {
         return film.data
     },
 
-    create : async() =>{
-        throw Error("Hay un error en la BDD al momento de crear el Film")
+    create: async (object) => {
+        return await axios.post("http://database:8004/", object);
     },
 };
