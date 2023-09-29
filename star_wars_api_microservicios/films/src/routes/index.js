@@ -13,6 +13,6 @@ router.delete("/:id", controllers.deleteFilm);
 
 
 
-router.post("/",middlewares.characterValidation, controllers.createFilm);
+//router.post("/",middlewares.characterValidation, controllers.createFilm);
 
 module.exports = router;

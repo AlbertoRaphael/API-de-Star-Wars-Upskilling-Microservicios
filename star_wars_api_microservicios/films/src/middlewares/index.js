@@ -1,3 +1,3 @@
-module.exports={
-    characterValidation : require("./filmValidation")
+module.exports = {
+    filmValidation: require("./filmValidation")
 };
