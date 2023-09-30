@@ -12,3 +12,5 @@ Está desarrollado en base al Framework ExpressJS, implementa MongoDB como plata
 Gateway como punto de entrada Personajes, Películas y Planetas todos ellos servicios CRUD ready que gestionan la manipulación de datos, sólo accesibles desde el gateway Database es el servicio que gestiona la conexión, envío y recuperación de datos desde/hacia la base de datos
 
 Este proyecto está en contenedores usando Docker Compose. Para ejecutar este proyecto debes hacer un fork del repo, y ejecutar localmente docker-compose up
+
+Tambien esta como ejemplo el servicio de manera monolitica
