@@ -1,3 +1,3 @@
 module.exports={
-    characterValidation : require("./planetValidation")
+    planetValidation : require("./planetValidation")
 };

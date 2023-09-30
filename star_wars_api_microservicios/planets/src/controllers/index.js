@@ -3,6 +3,9 @@ const { catcheAsync } = require("../utils")
 
 module.exports ={
     getPlanets: catcheAsync (require("./getPlanets")),
-    createPlanet: catcheAsync (require("./createPlanet"))
+    getPlanet: require("./getPlanet"),
+    createPlanet: catcheAsync (require("./createPlanet")),
+    updatePlanet: catcheAsync(require("./updatePlanet")),
+    deletePlanet: catcheAsync(require("./deletePlanet")),
 };
 
